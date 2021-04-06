@@ -48,7 +48,7 @@ def decision_tree(l,ig=[]):
 			ch=[e for e in l if e[k[1]]==s]
 			to["ch"]+=[{**decision_tree(ch,ig=ig+[k[1]]),"v":k}]
 		nc=_cnt_nodes(to)
-		if (bnc==None or nc<bnc):
+		if (bnc is None or nc<bnc):
 			bnc=nc
 			o=to
 	return o
