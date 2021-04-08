@@ -64,8 +64,7 @@ def graph(l,_i=0):
 		o=f"@{l['r']}"
 	if (_i==0):
 		print(o)
-	else:
-		return o
+	return o
 
 
 
